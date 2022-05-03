@@ -13,26 +13,22 @@ const onNavToggleClick = () => {
 };
 
 const onMainNavListClick = (evt) => {
+  evt.preventDefault();
+
   const id = evt.target.getAttribute('href');
-  const section = document.querySelector(id);
+  const scrollTarget = document.querySelector(id);
 
-  if (id != null && id.startsWith('#')) {
-    evt.preventDefault();
-    section.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-    closeMenu();
-  }
+  const topOffset = document.querySelector('.page-header').offsetHeight;
+  const elementPosition = scrollTarget.getBoundingClientRect().top;
+  const offsetPosition = elementPosition - topOffset;
+
+  window.scrollBy({
+    top: offsetPosition,
+    behavior: 'smooth'
+  });
+
+  closeMenu();
 };
-
-document.onclick = function (evt) {
-  if (navMain.classList.contains('main-nav--opened')) {
-    if (evt.target.classList.contains('main-nav--opened')) {
-      closeMenu();
-    }
-  }
-}
 
 if (navToggle) {
   navToggle.addEventListener('click', onNavToggleClick);
