@@ -1,0 +1,19 @@
+.profile__header {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.profile__info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+.profile__contacts {
+  margin-bottom: 40px;
+}

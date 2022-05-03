@@ -1,0 +1,15 @@
+.contacts__list {
+  @include reset-list;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $color-primary;
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
