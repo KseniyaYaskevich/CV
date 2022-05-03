@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 
-@mixin font ($size, $height: $size, $weight: normal, $style: normal) {
+@mixin font ($size, $height: $size, $weight: bold, $style: normal) {
   font-size: $size;
   line-height: $height;
   font-weight: $weight;
