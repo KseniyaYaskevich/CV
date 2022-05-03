@@ -6,50 +6,281 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="~assets/icons/favicon.ico" type="image/x-icon">
-  <title>Document</title>
+  <title>CV</title>
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="wrapper">
-      <a class="page-header__logo logo" href="#!">
-        Logo
-      </a>
-      <!-- /.page-header__logo -->
-      <nav class="page-header__main-nav main-nav">
+      <button class="button theme__toggle" type="button" aria-label="Сolor scheme switcher">
+        <svg class="theme__icon theme__icon--moon" width="40" height="40">
+          <use xlink:href="~assets/icons/sprite.svg#moon" width="40" height="40"></use>
+        </svg>
+        <svg class="theme__icon  theme__icon--sun" width="40" height="40">
+          <use xlink:href="~assets/icons/sprite.svg#sun"></use>
+        </svg>
+      </button>
+      <nav class="main-nav">
+        <button class="button main-nav__toggle" type="button" aria-label="Open menu">
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">Link</a>
+            <a class="main-nav__link" href="#profile">Contact</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Link</a>
+            <a class="main-nav__link" href="#about">About me</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Link</a>
+            <a class="main-nav__link" href="#skills">Skills</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Link</a>
+            <a class="main-nav__link" href="#languages">Language</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#education">Education</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#experience">Work Experience</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#code-example">Code example</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#projects">My projects</a>
           </li>
         </ul>
       </nav>
-      <!-- /.page-header__main-nav -->
-      <img src="~images/pets.png" alt="" width="200" height="200">
-    </div>
-    <!-- /.wrapper -->
     </div>
   </header>
+  <!-- /.page-header -->
   <main class="page-main">
-    <section class="section-name">
+    <section class="profile" id="profile">
       <div class="wrapper">
-        <h1 class="section-title">Title</h1>
+        <div class="profile__header">
+          <h1>Yaskevich Kseniya Leonidovna</h1>
+          <h2>Junior Front-end Developer</h2>
+          <p class="profile__info">Location: Minsk, Belarus
+            <svg class="profile__icon" width="20" height="20">
+              <use xlink:href="~assets/icons/sprite.svg#location"></use>
+            </svg>
+          </p>
+          <p class="profile__info">Age: 29 years
+            <svg class="profile__icon" width="20" height="20">
+              <use xlink:href="~assets/icons/sprite.svg#age"></use>
+            </svg>
+          </p>
+        </div>
+        <div class="profile__contacts contacts">
+          <h3>Contact</h3>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+375295407500">
+                <svg class="contacts__icon" width="20" height="20">
+                  <use xlink:href="~assets/icons/sprite.svg#phone"></use>
+                </svg>
+                +375 29 540 75 00
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:yaskevi4kseniya@gmail.com" target="_blank">
+                <svg class="contacts__icon" width="20" height="20">
+                  <use xlink:href="~assets/icons/sprite.svg#mailto"></use>
+                </svg>
+                yaskevi4kseniya@gmail.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="https://t.me/YaskevichKseniya" target="_blank">
+                <svg class="contacts__icon" width="20" height="20">
+                  <use xlink:href="~assets/icons/sprite.svg#telegram"></use>
+                </svg>
+                t.me/YaskevichKseniya
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="https://github.com/KseniyaYaskevich" target="_blank">
+                <svg class="contacts__icon" width="20" height="20">
+                  <use xlink:href="~assets/icons/sprite.svg#github"></use>
+                </svg>
+                github.com/KseniyaYaskevich
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="horizontal-line"></div>
+        <!-- /.horizontal-line -->
+      </div>
+    </section>
+    <!-- /.profile -->
+    <section class="about" id="about">
+      <div class="wrapper">
+        <div class="about__inner">
+          <img class="about__img" src="~images/profile.jpg" width="200" height="267" alt="Profile foto">
+          <div class="about__desc">
+            <h3>About me</h3>
+            <p>I have been interested in IT for a long time. I recently began to be fascinated by building
+              websites.
+              I am keen to gain more experience in the field. For this reason,
+              I am looking for a company willing to offer me a placement among their developers. In return, I
+              would offer my full commitment, and be a pleasant and friendly addition to your team.</p>
+          </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <!-- /.horizontal-line -->
+      </div>
+    </section>
+    <!-- /.about -->
+    <div class="page-inner">
+      <div class="wrapper">
+        <div class="column">
+          <section class="skills" id="skills">
+            <h3>Hard Skills</h3>
+            <ul class="skills__list">
+              <li class="skills__item">Figma
+                <div class="skills__level">
+                  <span class="skills__level-percent skills__level-percent--figma">90%</span>
+                </div>
+              </li>
+              <li class="skills__item">HTML
+                <div class="skills__level">
+                  <span class="skills__level-percent skills__level-percent--html">90%</span>
+                </div>
+              </li>
+              <li class="skills__item">CSS
+                <div class="skills__level">
+                  <span class="skills__level-percent skills__level-percent--css">90%</span>
+                </div>
+              </li>
+              <li class="skills__item">SASS/SCSS
+                <div class="skills__level">
+                  <span class="skills__level-percent skills__level-percent--sass">80%</span>
+                </div>
+              </li>
+              <li class="skills__item">JavaScript (Basic)
+                <div class="skills__level">
+                  <span class="skills__level-percent skills__level-percent--javascript">40%</span>
+                </div>
+              </li>
+              <li class="skills__item">Git
+                <div class="skills__level">
+                  <span class="skills__level-percent skills__level-percent--git">30%</span>
+                </div>
+              </li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul class="skills__list">
+              <li class="skills__item">Perfectionism
+                <div class="skills__level">
+                  <span class="skills__level-percent skills__level-percent--figma">99.99999%</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!-- /.skills -->
+          <section class="languages" id="languages">
+            <h3>Language</h3>
+            <ul class="languages__list">
+              <li class="languages__item">English (B1-B2)
+              </li>
+            </ul>
+          </section>
+          <!-- /.languages -->
+        </div>
+        <!-- /.column -->
+        <div class="vertical-line"></div>
+        <!-- /.vertical-line -->
+        <div class="column">
+          <section class="education container" id="education">
+            <h3>Education</h3>
+            <time datetime="2011"><em>2011 - 2016</em></time>
+            <p class="education__desc">MSLU <br>
+              «English Language» with the qualification of «Teacher»
+            </p>
+            <time datetime="2019"><em>2019 - 2020</em></time>
+            <p class="education__desc"> BSUIR <br>
+              «Information systems software» with the qualification of «Software engineer»
+            </p>
+            <time datetime="2021"><em>2021 - now</em></time>
+            <p class="education__desc"> Front-end <br>
+              I learn everything I see
+            </p>
+          </section>
+          <!-- /.education -->
+          <section class="experience container" id="experience">
+            <h3>Work Experience</h3>
+            <time datetime="2013-03-01"><em>01.03.2013 - 31.07.2019</em></time>
+            <p class="experience__desc">Netologic<br>
+              Software support specialist
+            </p>
+          </section>
+          <!-- /.experience -->
+        </div>
+        <!-- /.column -->
+        <div class="horizontal-line"></div>
+        <!-- /.horizontal-line -->
       </div>
       <!-- /.wrapper -->
+    </div>
+    <!-- /.page-inner -->
+    <section class="code-example" id="code-example">
+      <div class="wrapper">
+        <h3>Code example</h3>
+        <p>JavaScript tabs example</p>
+        <!-- <pre>
+        <code data-language="javascript">
+const filterTab = document.querySelectorAll('.filter__tab');
+const filterContent = document.querySelectorAll('.filter__content');
+
+filterTab.forEach((button, index) => {
+const btnOnClick = () => {
+if (!filterContent[index].classList.contains('filter__content--active')) {
+    filterContent.forEach((content) => {
+        content.classList.remove('filter__content--active');
+    });
+    filterTab.forEach((button) => {
+        button.classList.remove('filter__tab--active');
+    });
+}
+filterContent[index].classList.add('filter__content--active');
+filterTab[index].classList.add('filter__tab--active');
+};
+button.addEventListener('click', btnOnClick);
+});
+        </code>
+    </pre> -->
+      </div>
     </section>
+    <!-- /.code-example -->
+    <section class="projects" id="projects">
+      <div class="wrapper">
+        <h3>Projects</h3>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <a class="projects__link" href="https://kseniyayaskevich.github.io/pink/index.html" target="_blank">
+              My first project
+              <picture>
+                <source media="(min-width: 1200px)" srcset="~images/pink-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="~images/pink-tablet.jpg">
+                <img class="projects__image" src="~images/pink-mobile.jpg" width="300" height="100"
+                  alt="Pink website preview">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /.projects -->
   </main>
   <!-- /.page-main -->
   <footer class="page-footer">
     <div class="wrapper">
-
+      <p class="page-footer__desc">© 2022</p>
+      <a class="contacts__link" href="https://github.com/KseniyaYaskevich" target="_blank">
+        <svg class="contacts__icon" width="20" height="20">
+          <use xlink:href="~assets/icons/sprite.svg#github"></use>
+        </svg>
+        github.com/KseniyaYaskevich
+      </a>
     </div>
     <!-- /.wrapper -->
   </footer>
