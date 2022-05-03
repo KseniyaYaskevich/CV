@@ -1,4 +1,4 @@
-.page-header {
+.page-footer {
   background-color: $color-bg-darker;
 
   & .wrapper {
@@ -6,12 +6,5 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-  }
-
-  @include media-mobile-only {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
   }
 }
