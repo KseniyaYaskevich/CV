@@ -34,6 +34,7 @@ const config = {
   devServer: {
     open: true,
     host: 'localhost',
+    static: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -43,6 +44,9 @@ const config = {
       minify: {
         collapseWhitespace: isProduction,
       },
+    }),
+    new MiniCssExtractPlugin({
+      filename: './css/[contenthash].css',
     }),
   ],
   performance: {
@@ -54,7 +58,7 @@ const config = {
         loader: 'html-loader',
       },
       {
-        test: /\.m?js$/,
+        test: /\.m?js$/i,
         exclude: /node_modules/,
         use: jsLoaders(),
       },
@@ -119,9 +123,6 @@ const config = {
 module.exports = () => {
   if (isProduction) {
     config.mode = 'production';
-    config.plugins.push(new MiniCssExtractPlugin({
-      filename: './css/[contenthash].css',
-    }));
   } else {
     config.mode = 'development';
   }
