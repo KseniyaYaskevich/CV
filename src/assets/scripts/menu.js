@@ -18,16 +18,18 @@ const onMainNavListClick = (evt) => {
   const id = evt.target.getAttribute('href');
   const scrollTarget = document.querySelector(id);
 
-  const topOffset = document.querySelector('.page-header').offsetHeight;
-  const elementPosition = scrollTarget.getBoundingClientRect().top;
-  const offsetPosition = elementPosition - topOffset;
+  if (scrollTarget !== null) {
+    const topOffset = document.querySelector('.page-header').offsetHeight;
+    const elementPosition = scrollTarget.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - topOffset;
 
-  window.scrollBy({
-    top: offsetPosition,
-    behavior: 'smooth'
-  });
+    window.scrollBy({
+      top: offsetPosition - 40,
+      behavior: 'smooth'
+    });
 
-  closeMenu();
+    closeMenu();
+  } else return;
 };
 
 if (navToggle) {
