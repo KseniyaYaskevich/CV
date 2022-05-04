@@ -10,6 +10,14 @@ html {
 
 body {
   font-size: 1.6rem;
+
+  @include media-tablet {
+    font-size: 1.8rem;
+  }
+
+  @include media-desktop {
+    font-size: 1.8rem;
+  }
 }
 
 section {
@@ -83,10 +91,10 @@ img {
 }
 
 .page-main {
-  padding-top: 40px;
+  padding-top: 100px;
 
-  @include media-mobile-only {
-    padding-top: 100px;
+  @include media-tablet {
+    padding-top: 200px;
   }
 }
 
