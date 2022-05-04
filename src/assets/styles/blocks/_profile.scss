@@ -1,6 +1,22 @@
+.profile__inner {
+  margin-bottom: 40px;
+
+  @include media-tablet {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+
 .profile__header {
   margin-bottom: 20px;
   text-align: right;
+
+  @include media-tablet {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
 }
 
 .profile__info {

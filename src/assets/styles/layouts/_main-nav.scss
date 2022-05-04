@@ -81,4 +81,9 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color-primary;
+
+  @include media-tablet {
+    padding: 10px;
+    text-transform: none;
+  }
 }
