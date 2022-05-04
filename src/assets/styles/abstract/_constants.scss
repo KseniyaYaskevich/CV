@@ -3,9 +3,10 @@ $font-family--georgia: "Georgia", serif;
 $font-family--arial:   "Arial", sans-serif;
 
 // Colors
+$color-black:     rgba(0, 0, 0, 1);
 $color-bg:        rgba(255, 250, 247, 1);
 // $color-bg: rgba(17, 26, 36, 1);
-$color-bg-darker: rgb(243 231 228 / 90%);
+$color-bg-darker: rgba(243, 231, 228, 1);
 // $color-bg-darker: rgba(1, 28, 59, 0.9);
 $color-primary:      rgba(91, 101, 114, 1);
 // $color-primary: rgba(245, 231, 227, 1);
@@ -14,6 +15,7 @@ $color-hover: rgba(209, 173, 172, 1);
 $color-gradient: rgb(190, 211, 229);
 
 // Variables
+$min-width:         300px;
 $content-width:     1280px;
 
 // Viewports
