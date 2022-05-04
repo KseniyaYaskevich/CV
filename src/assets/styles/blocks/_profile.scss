@@ -17,19 +17,27 @@
     margin-right: 30px;
   }
 }
+
+.profile__title,
+.profile__subtitle {
+  margin-bottom: 10px;
 }
 
 .profile__info {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  & em {
+    padding-left: 15px;
+  }
+
+  &:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 .profile__icon {
   margin-left: 10px;
   fill: currentColor;
-}
-
-.profile__contacts {
-  margin-bottom: 40px;
 }

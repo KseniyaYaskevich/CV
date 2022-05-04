@@ -1,12 +1,32 @@
+.contacts__title {
+  margin-bottom: 20px;
+}
+
 .contacts__list {
   @include reset-list;
 }
 
+.contacts__item {
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
 .contacts__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: $color-primary;
+  transition: color .3s ease-out;
+
+  &:hover {
+    color: $color-hover;
+  }
+
+  &:active {
+    transform: translate(0, 2px);
+  }
 }
 
 .contacts__icon {

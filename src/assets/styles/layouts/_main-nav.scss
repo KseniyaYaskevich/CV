@@ -44,6 +44,11 @@
     &::after {
       top: 66%;
     }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $color-black;
+    }
   }
 }
 
@@ -76,11 +81,22 @@
 
 .main-nav__link {
   display: block;
-  padding: 20px;
+  padding: 35px;
 
   text-transform: uppercase;
   text-decoration: none;
   color: $color-primary;
+
+  transition: color .5s ease-out, box-shadow .5s ease-out;
+
+  &:hover {
+    color: $color-black;
+    box-shadow: 0px 1px 0px 0px $color-black;
+  }
+
+  &:active {
+    transform: translate(0, 2px);
+  }
 
   @include media-tablet {
     padding: 10px;

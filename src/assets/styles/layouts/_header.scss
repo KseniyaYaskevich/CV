@@ -1,17 +1,17 @@
 .page-header {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   background-color: $color-bg-darker;
+  border-bottom: 1px $color-primary solid;
 
   & .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-  }
-
-  @include media-mobile-only {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
   }
 }
