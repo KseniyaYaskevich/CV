@@ -116,8 +116,23 @@ img {
   display: none;
 
   @include media-tablet {
+    display: block;
     width: 2px;
-    height: 100%;
+    height: auto;
     background-color: $color-primary;
+  }
+}
+
+.columns-wrapper {
+  @include media-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.column {
+  @include media-tablet {
+    padding-top: 40px;
+    flex-basis: 45%;
   }
 }
