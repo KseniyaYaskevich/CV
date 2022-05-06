@@ -113,9 +113,9 @@ const config = {
   resolve: {
     extensions: ['.js'],
     alias: {
-      assets: path.resolve(__dirname, 'src/assets'),
-      fonts: path.resolve(__dirname, 'src/assets/fonts'),
-      images: path.resolve(__dirname, 'src/assets/images'),
+      assets: path.resolve(__dirname, './src/assets'),
+      fonts: path.resolve(__dirname, './src/assets/fonts'),
+      images: path.resolve(__dirname, './src/assets/images'),
     },
   },
 };
