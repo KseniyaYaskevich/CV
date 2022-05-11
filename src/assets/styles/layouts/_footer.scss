@@ -1,6 +1,6 @@
 .page-footer {
-  background-color: $color-bg-darker;
-  border-top: 1px $color-primary solid;
+  background-color: var(--color-bg-darker);
+  border-top: 1px var(--color-primary) solid;
 
   & .wrapper {
     display: flex;

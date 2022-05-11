@@ -17,11 +17,11 @@
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: $color-primary;
+  color: var(--color-primary);
   transition: color .3s ease-out;
 
   &:hover {
-    color: $color-hover;
+    color: var(--color-hover);
   }
 
   &:active {

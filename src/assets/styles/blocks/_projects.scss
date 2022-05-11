@@ -9,17 +9,17 @@
   padding: 10px;
 
   text-decoration: none;
-  color: $color-primary;
+  color: var(--color-primary);
   transition: color .5s ease-out, box-shadow .5s ease-out;
 
   &:hover {
-    color: $color-hover;
+    color: var(--color-hover);
     box-shadow: 0px 0px 10px 3px rgb(34 60 80 / 60%);
   }
 
   &:active {
     box-shadow: none;
-    border: 1px solid $color-primary;
+    border: 1px solid var(--color-primary);
   }
 }
 

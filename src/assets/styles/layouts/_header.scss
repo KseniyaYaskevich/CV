@@ -5,8 +5,8 @@
   left: 0;
   width: 100%;
 
-  background-color: $color-bg-darker;
-  border-bottom: 1px $color-primary solid;
+  background-color: var(--color-bg-darker);
+  border-bottom: 1px var(--color-primary) solid;
 
   & .wrapper {
     display: flex;

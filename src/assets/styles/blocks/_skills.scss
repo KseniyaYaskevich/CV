@@ -27,7 +27,7 @@
   position: relative;
   height: 25px;
   width: 50%;
-  border: 2px solid $color-primary;
+  border: 2px solid var(--color-primary);
 
   @include media-tablet {
     width: 100%;
@@ -42,7 +42,8 @@
   position: absolute;
   height: 100%;
   text-align: right;
-  background-color: $color-gradient;
+  color: rgba(91, 101, 114, 1);
+  background-color: var(--color-gradient);
 }
 
 .skills__percent--figma {
