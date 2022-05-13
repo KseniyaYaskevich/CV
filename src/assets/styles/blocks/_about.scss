@@ -19,7 +19,7 @@
 .about__img {
   display: block;
   border-radius: 10px;
-  
+
   @include media-mobile-only {
     margin: 0 auto;
     margin-bottom: 10px;
@@ -37,5 +37,29 @@
 
   @include media-tablet {
     text-align: right;
+  }
+}
+
+.about__switch-language {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.switch-language__radio {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70px;
+}
+
+.radio__input:checked+label {
+  color: var(--color-hover);
+}
+
+.radio__label {
+  transition: color .3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-hover);
   }
 }
