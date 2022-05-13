@@ -5,7 +5,7 @@ const themeToggle = document.querySelector('#theme-toggle');
 
 const onThemeToggleClick = () => {
   theme.value = theme.value === 'light' ? 'dark' : 'light';
-  setPreference();
+  setColorPreference();
 };
 
 const getColorPreference = () => {
@@ -16,12 +16,12 @@ const getColorPreference = () => {
   }
 };
 
-const setPreference = () => {
+const setColorPreference = () => {
   storage.setItem(storageKey, theme.value);
-  reflectPreference();
+  reflectColorPreference();
 };
 
-const reflectPreference = () => {
+const reflectColorPreference = () => {
   document.firstElementChild.setAttribute('data-theme', theme.value);
 
   themeToggle.setAttribute('aria-label', theme.value)
@@ -31,10 +31,10 @@ const theme = {
   value: getColorPreference(),
 };
 
-reflectPreference();
+reflectColorPreference();
 
 window.onload = () => {
-  reflectPreference();
+  reflectColorPreference();
 
   themeToggle.addEventListener('click', onThemeToggleClick);
 };
@@ -45,5 +45,5 @@ window
     matches: isDark
   }) => {
     theme.value = isDark ? 'dark' : 'light'
-    setPreference();
+    setColorPreference();
   })
