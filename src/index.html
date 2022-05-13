@@ -132,8 +132,19 @@
           <img class="about__img" src="~images/profile.jpg" width="200" height="267" alt="Profile foto">
           <div class="about__desc">
             <h3 class="section__title">About me</h3>
-            <p>I have been interested in IT for a long time. I recently began to be fascinated by building
-              websites.
+            <div class="about__switch-language switch-language__radio radio">
+              <div class="radio__item">
+                <input type="radio" class="radio__input visually-hidden" id="en" name="language">
+                <label class="radio__label" for="en">EN</label>
+              </div>
+              <span>/</span>
+              <div class="radio__item">
+                <input type="radio" class="radio__input visually-hidden" id="ru" name="language">
+                <label class="radio__label" for="ru">RU</label>
+              </div>
+            </div>
+            <p data-i18="about">I have been interested in IT for a long time. I recently began to be fascinated by
+              building websites.
               I am keen to gain more experience in the field. For this reason,
               I am looking for a company willing to offer me a placement among their developers. In return, I
               would offer my full commitment, and be a pleasant and friendly addition to your team.</p>
