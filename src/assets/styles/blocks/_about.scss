@@ -43,6 +43,10 @@
 .about__switch-language {
   margin-bottom: 20px;
   font-weight: bold;
+
+  @include media-tablet {
+    margin-left: auto;
+  }
 }
 
 .switch-language__radio {
