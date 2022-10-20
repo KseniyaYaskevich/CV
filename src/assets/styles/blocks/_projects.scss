@@ -1,5 +1,11 @@
 .projects__list {
   @include reset-list;
+
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
 
 .projects__link {
