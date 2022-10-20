@@ -8,7 +8,15 @@
   }
 }
 
+.projects__item {
+  width: 100%;
+  max-height: 500px;
+}
+
 .projects__link {
+  position: relative;
+  overflow: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +28,7 @@
 
   &:hover {
     color: var(--color-hover);
-    box-shadow: 0px 0px 10px 3px rgb(34 60 80 / 60%);
+    box-shadow: 0px 0px 10px 3px rgb(34, 60, 80, 0.6);
   }
 
   &:active {
@@ -32,4 +40,5 @@
 .projects__image {
   padding-top: 10px;
   width: auto;
+  max-height: 350px;
 }
